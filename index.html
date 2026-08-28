@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimum Wellness Foundation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#9333ea', // purple-600 matching logo
+                        secondary: '#7e22ce', // purple-700 
+                        accent: '#f59e0b', // amber-500
+                        primaryLight: '#f3e8ff' // purple-100
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-24">
+                <div class="flex items-center">
+                    <img src="logo.png" alt="Optimum Wellness Foundation" class="h-16 w-auto object-contain">
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-600 hover:text-primary font-medium transition">Our Mission</a>
+                    <a href="#" class="text-gray-600 hover:text-primary font-medium transition">Programs</a>
+                    <a href="#" class="text-gray-600 hover:text-primary font-medium transition">Impact</a>
+                    <a href="#" class="text-gray-600 hover:text-primary font-medium transition">Events</a>
+                    <a href="#" class="bg-primary hover:bg-secondary text-white px-6 py-2.5 rounded-full font-semibold transition shadow-lg transform hover:-translate-y-0.5">Donate Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg h-screen flex items-center mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <span class="text-accent font-bold tracking-wider uppercase text-sm mb-4 block">Together We Heal</span>
+            <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-6 max-w-3xl">
+                Bridging the Gap to <span class="text-primaryLight">Better Health</span> for Everyone.
+            </h1>
+            <p class="text-xl text-gray-200 mb-10 max-w-2xl">
+                We provide essential medical care, mental health support, and nutritional education to underserved communities worldwide.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+                <a href="#impact" class="bg-primary hover:bg-secondary text-white px-8 py-4 rounded-full font-bold text-lg transition shadow-lg text-center border border-primary">See Our Impact</a>
+                <a href="#volunteer" class="bg-transparent hover:bg-white/10 text-white px-8 py-4 rounded-full font-bold text-lg transition text-center border-2 border-white">Become a Volunteer</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats/Impact Section -->
+    <section id="impact" class="py-16 bg-white relative -mt-16 mx-4 md:mx-auto max-w-6xl rounded-2xl shadow-xl z-10">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-200 px-8">
+            <div class="p-4">
+                <div class="text-4xl font-bold text-primary mb-2">25k+</div>
+                <div class="text-gray-600 font-medium">Patients Treated</div>
+            </div>
+            <div class="p-4">
+                <div class="text-4xl font-bold text-primary mb-2">120</div>
+                <div class="text-gray-600 font-medium">Active Clinics</div>
+            </div>
+            <div class="p-4">
+                <div class="text-4xl font-bold text-primary mb-2">15</div>
+                <div class="text-gray-600 font-medium">Countries Reached</div>
+            </div>
+            <div class="p-4">
+                <div class="text-4xl font-bold text-primary mb-2">800+</div>
+                <div class="text-gray-600 font-medium">Global Volunteers</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us / Our Story -->
+    <section class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="w-full md:w-1/2 relative">
+                    <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Medical team helping patient" class="rounded-2xl shadow-2xl relative z-10">
+                    <div class="absolute -bottom-8 -right-8 w-64 h-64 bg-primaryLight rounded-full z-0 hidden md:block"></div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-accent font-bold tracking-wider uppercase text-sm mb-2 block">Our Story</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Healthcare is a right, not a privilege.</h3>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Founded in 2012, Optimum Wellness Foundation started with a simple belief: everyone deserves access to quality healthcare, regardless of their geographical location or economic status.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Over the last decade, we have grown from a small group of volunteer doctors into a global NGO, deploying mobile clinics and building sustainable healthcare infrastructure in the most remote corners of the world.
+                    </p>
+                    <ul class="space-y-4 mb-8 text-gray-700 font-medium">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-primary mr-3 text-xl"></i> Transparent funding (100% goes to the field)</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-primary mr-3 text-xl"></i> Locally-led medical teams</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-primary mr-3 text-xl"></i> Sustainable, long-term health infrastructure</li>
+                    </ul>
+                    <a href="#" class="inline-flex items-center text-lg font-bold text-primary hover:text-secondary border-b-2 border-primary pb-1 transition">Read our full history <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Ways to Give (Common NGO Section) -->
+    <section class="py-24 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Ways to Get Involved</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">There are many ways to support our mission. Choose the path that works best for you and help us create lasting change.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl p-10 shadow-lg border border-gray-100 text-center flex flex-col h-full">
+                    <div class="w-20 h-20 bg-primaryLight rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-hand-holding-heart text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">One-Time Gift</h3>
+                    <p class="text-gray-600 mb-8 flex-grow">Make an immediate impact by funding critical medical supplies and emergency interventions where they are needed most.</p>
+                    <button class="w-full bg-white border-2 border-primary text-primary hover:bg-primary hover:text-white py-3 rounded-full font-bold transition">Donate Once</button>
+                </div>
+                <!-- Card 2 (Highlighted) -->
+                <div class="bg-primary rounded-2xl p-10 shadow-xl text-center transform md:-translate-y-4 flex flex-col h-full text-white relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-accent text-xs font-bold px-3 py-1 rounded-bl-lg">Most Popular</div>
+                    <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-sync-alt text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Monthly Giving</h3>
+                    <p class="text-primaryLight mb-8 flex-grow">Join "The Wellness Circle" to provide sustainable, reliable funding that allows us to plan long-term health infrastructure.</p>
+                    <button class="w-full bg-accent hover:bg-yellow-600 text-white py-3 rounded-full font-bold transition shadow-md">Give Monthly</button>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl p-10 shadow-lg border border-gray-100 text-center flex flex-col h-full">
+                    <div class="w-20 h-20 bg-primaryLight rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Corporate Matching</h3>
+                    <p class="text-gray-600 mb-8 flex-grow">Double your impact. Many employers will match your charitable contributions, extending your reach to more communities.</p>
+                    <button class="w-full bg-white border-2 border-primary text-primary hover:bg-primary hover:text-white py-3 rounded-full font-bold transition">Check Match</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pillars of Wellness -->
+    <section class="py-24 bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Approach to Wellness</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">We believe in a holistic approach, addressing not just physical ailments, but mental and nutritional health as well.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Pillar 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition border border-gray-100 group">
+                    <div class="w-16 h-16 bg-primaryLight rounded-full flex items-center justify-center mb-6 group-hover:bg-primary transition">
+                        <i class="fas fa-stethoscope text-2xl text-primary group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Clinical Care</h3>
+                    <p class="text-gray-600 mb-6">Delivering essential medical services, vaccinations, and emergency care to communities without access to traditional healthcare infrastructure.</p>
+                    <a href="#" class="inline-flex items-center mt-auto text-primary font-semibold hover:text-secondary">Learn more <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                </div>
+                
+                <!-- Pillar 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition border border-gray-100 group">
+                    <div class="w-16 h-16 bg-primaryLight rounded-full flex items-center justify-center mb-6 group-hover:bg-primary transition">
+                        <i class="fas fa-brain text-2xl text-primary group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Mental Health</h3>
+                    <p class="text-gray-600 mb-6">Providing counseling, support groups, and trauma recovery programs to ensure holistic wellbeing and resilience.</p>
+                    <a href="#" class="inline-flex items-center mt-auto text-primary font-semibold hover:text-secondary">Learn more <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition border border-gray-100 group">
+                    <div class="w-16 h-16 bg-primaryLight rounded-full flex items-center justify-center mb-6 group-hover:bg-primary transition">
+                        <i class="fas fa-apple-alt text-2xl text-primary group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Nutrition Education</h3>
+                    <p class="text-gray-600 mb-6">Combating malnutrition through community gardens, food distribution, and education on sustainable, healthy diets.</p>
+                    <a href="#" class="inline-flex items-center mt-auto text-primary font-semibold hover:text-secondary">Learn more <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Upcoming Events -->
+    <section class="py-24 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Upcoming Events</h2>
+                    <p class="text-gray-400 max-w-xl">Join us in the field or at our fundraising galas to connect with our mission in person.</p>
+                </div>
+                <a href="#" class="mt-6 md:mt-0 inline-block bg-transparent text-white font-bold border-2 border-white px-6 py-2 rounded-full hover:bg-white hover:text-gray-900 transition shadow-sm">View Calendar</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Event 1 -->
+                <div class="bg-gray-800 rounded-2xl p-6 flex flex-col sm:flex-row gap-6 items-center hover:bg-gray-700 transition cursor-pointer">
+                    <div class="bg-primary rounded-xl text-center p-4 min-w-[100px]">
+                        <span class="block text-sm font-bold uppercase tracking-wider text-primaryLight">Oct</span>
+                        <span class="block text-3xl font-bold">14</span>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Annual Global Health Gala</h4>
+                        <p class="text-gray-400 text-sm mb-3"><i class="fas fa-map-marker-alt mr-2"></i> The Plaza Hotel, New York</p>
+                        <p class="text-gray-300 text-sm">Join us for an evening of stories, inspiration, and fundraising to support our new mobile clinic initiative in rural clinics.</p>
+                    </div>
+                </div>
+                <!-- Event 2 -->
+                <div class="bg-gray-800 rounded-2xl p-6 flex flex-col sm:flex-row gap-6 items-center hover:bg-gray-700 transition cursor-pointer">
+                    <div class="bg-primary rounded-xl text-center p-4 min-w-[100px]">
+                        <span class="block text-sm font-bold uppercase tracking-wider text-primaryLight">Nov</span>
+                        <span class="block text-3xl font-bold">02</span>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Volunteer Training Retreat</h4>
+                        <p class="text-gray-400 text-sm mb-3"><i class="fas fa-video mr-2"></i> Virtual Event</p>
+                        <p class="text-gray-300 text-sm">A mandatory orientation and training session for newly onboarded medical and logistical volunteers for the winter deployment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Stories of Impact</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Real people, real change. See how your support directly transforms lives across the globe.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-md flex flex-col sm:flex-row group cursor-pointer hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Smiling child" class="w-full sm:w-2/5 object-cover h-64 sm:h-auto group-hover:scale-105 transition duration-500">
+                    <div class="p-8 sm:w-3/5 flex flex-col justify-center">
+                        <span class="text-xs font-bold text-primary uppercase tracking-wide mb-2">Kenya • Clinical Care</span>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Amani's Journey to Recovery</h4>
+                        <p class="text-gray-600 text-sm mb-4">After receiving critical vaccinations at our mobile clinic, 5-year-old Amani was able to return to school safely and healthy.</p>
+                        <span class="text-primary font-semibold text-sm">Read Story &rarr;</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-md flex flex-col sm:flex-row group cursor-pointer hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1589156229687-496a31ad1d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Women in community" class="w-full sm:w-2/5 object-cover h-64 sm:h-auto group-hover:scale-105 transition duration-500">
+                    <div class="p-8 sm:w-3/5 flex flex-col justify-center">
+                        <span class="text-xs font-bold text-primary uppercase tracking-wide mb-2">Guatemala • Nutrition</span>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Empowering Local Farmers</h4>
+                        <p class="text-gray-600 text-sm mb-4">Our sustainable agriculture program helped Maria's village double their crop yield, ensuring year-round food security.</p>
+                        <span class="text-primary font-semibold text-sm">Read Story &rarr;</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="#" class="inline-block bg-white text-gray-800 font-bold border-2 border-gray-200 px-8 py-3 rounded-full hover:border-primary hover:text-primary transition shadow-sm">View All Stories</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Logo Strip -->
+    <section class="py-12 bg-gray-100 border-y border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-8">Trusted by Global Partners</p>
+            <div class="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-60 grayscale">
+                <!-- Using FontAwesome icons as placeholder logos for partners -->
+                <i class="fab fa-aws text-5xl hover:grayscale-0 hover:opacity-100 transition duration-300 hover:text-primary"></i>
+                <i class="fab fa-google text-4xl hover:grayscale-0 hover:opacity-100 transition duration-300 hover:text-primary"></i>
+                <i class="fab fa-microsoft text-4xl hover:grayscale-0 hover:opacity-100 transition duration-300 hover:text-primary"></i>
+                <i class="fab fa-salesforce text-5xl hover:grayscale-0 hover:opacity-100 transition duration-300 hover:text-primary"></i>
+                <i class="fas fa-globe-americas text-4xl hover:grayscale-0 hover:opacity-100 transition duration-300 hover:text-primary"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation / CTA Banner -->
+    <section class="py-20 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">100% of your donation funds our healthcare programs.</h2>
+            <p class="text-xl mb-10 text-primaryLight">Private donors cover our operating costs, so your money goes directly to the field where it's needed most.</p>
+            
+            <div class="bg-white p-6 md:p-8 rounded-3xl shadow-2xl max-w-2xl mx-auto">
+                <div class="flex justify-between gap-3 md:gap-4 mb-6">
+                    <button class="flex-1 py-3 border-2 border-gray-200 rounded-xl text-gray-700 font-bold hover:border-primary hover:text-primary transition focus:outline-none focus:border-primary focus:bg-primaryLight">$25</button>
+                    <button class="flex-1 py-3 border-2 border-primary bg-primaryLight rounded-xl text-primary font-bold transition focus:outline-none shadow-inner">$50</button>
+                    <button class="flex-1 py-3 border-2 border-gray-200 rounded-xl text-gray-700 font-bold hover:border-primary hover:text-primary transition focus:outline-none focus:border-primary focus:bg-primaryLight">$100</button>
+                    <button class="flex-1 py-3 border-2 border-gray-200 rounded-xl text-gray-700 font-bold hover:border-primary hover:text-primary transition focus:outline-none focus:border-primary focus:bg-primaryLight text-sm md:text-base">Other</button>
+                </div>
+                <div class="mb-6 flex items-center justify-center">
+                    <input type="checkbox" id="monthly" class="w-5 h-5 text-primary rounded border-gray-300 focus:ring-primary mr-2">
+                    <label for="monthly" class="text-gray-700 font-medium">Make this a monthly donation</label>
+                </div>
+                <button class="w-full bg-accent hover:bg-yellow-600 text-white py-4 rounded-xl font-bold text-xl transition shadow-lg transform hover:-translate-y-1">Give $50 Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="py-16 bg-gray-800 text-white border-b border-gray-900">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <i class="far fa-envelope-open text-4xl text-primary mb-4"></i>
+            <h3 class="text-2xl font-bold mb-3">Join Our Mailing List</h3>
+            <p class="text-gray-300 mb-8">Get the latest stories from the field, updates on our impact, and ways to get involved.</p>
+            <form class="flex flex-col sm:flex-row justify-center max-w-xl mx-auto gap-3">
+                <input type="email" placeholder="Enter your email address" required class="flex-1 px-6 py-4 rounded-full text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary">
+                <button type="submit" class="bg-primary hover:bg-secondary text-white font-bold py-4 px-8 rounded-full transition shadow-md whitespace-nowrap">Subscribe</button>
+            </form>
+            <p class="text-xs text-gray-500 mt-4">We respect your privacy and will never share your information.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+            <div>
+                <div class="flex items-center mb-6">
+                    <img src="logo.png" alt="Optimum Wellness Foundation" class="h-12 w-auto object-contain brightness-0 invert">
+                </div>
+                <p class="text-sm mb-6 leading-relaxed">Dedicated to improving lives globally through comprehensive health, mental resilience, and nutritional initiatives.</p>
+                <div class="flex space-x-5">
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-bold text-lg mb-6">About Us</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#" class="hover:text-primary transition">Our History & Story</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Leadership Team</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Financial Transparency</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Careers & Internships</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Press Center</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-bold text-lg mb-6">Get Involved</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#" class="hover:text-primary transition">Ways to Donate</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Volunteer Globally</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Start a Fundraiser</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Corporate Partnerships</a></li>
+                    <li><a href="#" class="hover:text-primary transition">Advocacy Programs</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-bold text-lg mb-6">Contact Us</h4>
+                <ul class="space-y-4 text-sm">
+                    <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i> 123 Wellness Avenue,<br>Suite 400<br>New York, NY 10001</li>
+                    <li class="flex items-center"><i class="fas fa-envelope mr-3 text-primary"></i> hello@optimumwellness.org</li>
+                    <li class="flex items-center"><i class="fas fa-phone mr-3 text-primary"></i> +1 (800) 555-WELL</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-gray-800 text-sm flex flex-col md:flex-row justify-between items-center text-gray-500">
+            <p>&copy; 2026 Optimum Wellness Foundation. A registered 501(c)(3) non-profit.</p>
+            <div class="mt-4 md:mt-0 space-x-4">
+                <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
